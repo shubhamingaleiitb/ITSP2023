@@ -7,9 +7,20 @@ from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential, load_model
 from keras.layers import LSTM, Dense, Dropout
 
-st.title('Stock market forecasting using Deep Learning')
+st.title('Stock market forecasting using Deep Learning - ITSP 2023')
 
 st.warning('We utilized a LSTM model to predict this data, but it should not be employed for actual transactions. This project is undertaken as a summer project with the primary aim of delving into Deep Learning techniques. ', icon="⚠️")
+
+prompt = st.chat_input("Do you want to know more about us?")
+if prompt:
+    st.write(f"We are team 'The Bayesians' from IIT Bombay. We are a team of 4 students. We are currently in our third year of study. We are working on this project as a part of the ITSP 2023.")
+st.info('The project utilizes data that spans from January 1st, 2010, to December 31st, 2019.', icon="ℹ️")
+
+
+
+
+
+
 
 # Define the list of companies and their corresponding symbols
 companies = {
