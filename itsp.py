@@ -13,7 +13,10 @@ st.warning('We utilized a LSTM model to predict this data, but it should not be 
 
 prompt = st.chat_input("Do you want to know more about us?")
 if prompt:
-    st.write(f"We are team 'The Bayesians' from IIT Bombay. We are a team of 4 students. We are currently in our third year of study. We are working on this project as a part of the ITSP 2023.")
+
+    with st.chat_message("user"):
+        st.write("We are team 'The Bayesians' from IIT Bombay. We are a team of 4 students. We are currently in our third year of study. We are working on this project as a part of the ITSP 2023. 👋")
+    # st.write(f"We are team 'The Bayesians' from IIT Bombay. We are a team of 4 students. We are currently in our third year of study. We are working on this project as a part of the ITSP 2023.")
 st.info('The project utilizes data that spans from January 1st, 2010, to December 31st, 2019.', icon="ℹ️")
 
 
